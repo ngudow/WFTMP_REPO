@@ -3,5 +3,91 @@
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 
-/* BLOCKS */
-@import "./blocks/header.scss";
+// /* BLOCKS */
+// @import "./blocks/header.scss";
+
+@media (min-width: 1440px), (min-width: 768px){
+  .products-item-card__image {
+    width: 161px;
+    height: 172px;
+  }
+}
+
+.hero__background-image {
+    width: 320px;
+    height: 302px;
+    background-image: 
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+        url(/images/index-background-desktop2@1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx){
+        background-image: 
+            linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+            url(/images/index-background-desktop2@2x.png);
+    }
+
+    @media (min-width: 768px){
+        display: none;
+    }
+
+    @media (min-width: 1440px) {
+        display: inline;
+        width: 720px;
+        height: 694px;
+        background-image: 
+            linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+            url(/images/index-background-desktop1@1x.png);
+
+        @media (min-resolution: 2dppx){
+            background-image: 
+               linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+                url(/images/index-background-desktop1@2x.png); 
+        }
+    }
+}
+
+.other-products-gift {
+    width: 280px;
+    height: 290px;
+    background-image: 
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+        url(/images/image1@1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx){
+        background-image: 
+            linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+            url(/images/image1@2x.png);
+    }
+
+    @media (min-width: 768px) {
+        width: 707px;
+        height: 200px;
+        background-image: 
+            linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+            url(/images/image2@1x.png);
+
+        @media (min-resolution: 2dppx){
+            background-image: 
+               linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+                url(/images/image2@2x.png); 
+        }
+    }
+
+    @media (min-width: 1440px) {
+        width: 245px;
+        height: 288px;
+        background-image: 
+            linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+            url(/images/image1@1x.png);
+
+        @media (min-resolution: 2dppx){
+            background-image: 
+               linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+                url(/images/image1@2x.png); 
+        }
+    }
+}

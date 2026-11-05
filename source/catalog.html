@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script> -->
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- <script src="scripts/index.js" defer></script> -->
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__logo-image" href="#">
-        <img src="" alt="Кэт энерджи">
+      <a class="header__logo-image" href="index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo_pic.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_pic2.svg" width="60" height="50">
+          <img src="images/logo-mobile.svg" width="33" height="38" alt="Cat Energy">
+        </picture> 
       </a>
       <a class="header__logo-text" href="#">
-        <img src="" alt="CAT ENERGY">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo.svg" width="118" height="21">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo.svg" width="101" height="18">
+          <img src="images/logo.svg" width="101" height="18" alt="Cat Energy">
+        </picture> 
       </a>
       <nav class="navigation">
           <button class="navigation__toggle" type="button">
@@ -41,18 +50,22 @@
             </ul>
           </div>
       </nav>
-    </header>  
+    </header>
     <main class="main-container">
       <section class="products">
         <div class="products__wrapper">
           <h1>Каталог продукции</h1>
           <ul class="products-list">
-
             <li class="products-item">
               <div class="products-item__wrapper">
                 <div class="products-item-card">
                   <a href="#">
-                    <img class="products-item-card__image" src="" alt="Cat Energy PRO 500 г">
+                    <picture>
+                      <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-1@1x.png 1x, images/catalog-1@2x.png 2x">
+                      <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-1@1x.png 1x, images/catalog-1@2x.png 2x">
+                      <img class="products-item-card__image" src="images/catalog-1@1x.png" srcset="images/catalog-1@2x.png 2x" 
+                      width="68" height="86" alt="Cat Energy PRO 500 г">
+                    </picture>              
                   </a>                  
                   <div class="products-item-card__text">
                     <a class="products-item-card__product-name" href="#">
@@ -97,7 +110,12 @@
               <div class="products-item__wrapper">
                 <div class="products-item-card">
                   <a href="#">
-                    <img class="products-item-card__image" src="" alt="Cat Energy PRO 1000 г">
+                    <picture>
+                      <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-2@1x.png 1x, images/catalog-2@2x.png 2x">
+                      <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-2@1x.png 1x, images/catalog-2@2x.png 2x">
+                      <img class="products-item-card__image" src="images/catalog-2@1x.png" srcset="images/catalog-2@2x.png 2x" 
+                      width="68" height="86" alt="Cat Energy PRO 1000 г">
+                    </picture> 
                   </a>                  
                   <div class="products-item-card__text">
                     <a class="products-item-card__product-name" href="#">
@@ -142,7 +160,12 @@
               <div class="products-item__wrapper">
                 <div class="products-item-card">
                   <a href="#">
-                    <img class="products-item-card__image" src="" alt="Cat Energy PRO 500 г">
+                    <picture>
+                      <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-3@1x.png 1x, images/catalog-3@2x.png 2x">
+                      <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-3@1x.png 1x, images/catalog-3@2x.png 2x">
+                      <img class="products-item-card__image" src="images/catalog-3@1x.png" srcset="images/catalog-3@2x.png 2x" 
+                      width="68" height="86" alt="Cat Energy PRO 500 г">
+                    </picture> 
                   </a>                  
                   <div class="products-item-card__text">
                     <a class="products-item-card__product-name" href="#">
@@ -187,7 +210,12 @@
               <div class="products-item__wrapper">
                 <div class="products-item-card">
                   <a href="#">
-                    <img class="products-item-card__image" src="" alt="Cat Energy PRO 1000 г">
+                    <picture>
+                      <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-4@1x.png 1x, images/catalog-4@2x.png 2x">
+                      <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-4@1x.png 1x, images/catalog-4@2x.png 2x">
+                      <img class="products-item-card__image" src="images/catalog-4@1x.png" srcset="images/catalog-4@2x.png 2x" 
+                      width="68" height="86" alt="Cat Energy PRO 1000 г">
+                    </picture> 
                   </a>                  
                   <div class="products-item-card__text">
                     <a class="products-item-card__product-name" href="#">
@@ -232,7 +260,12 @@
               <div class="products-item__wrapper">
                 <div class="products-item-card">
                   <a href="#">
-                    <img class="products-item-card__image" src="" alt="Cat Energy PRO 500 г">
+                    <picture>
+                      <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-5@1x.png 1x, images/catalog-5@2x.png 2x">
+                      <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-5@1x.png 1x, images/catalog-5@2x.png 2x">
+                      <img class="products-item-card__image" src="images/catalog-5@1x.png" srcset="images/catalog-5@2x.png 2x" 
+                      width="68" height="86" alt="Cat Energy PRO 500 г">
+                    </picture> 
                   </a>                  
                   <div class="products-item-card__text">
                     <a class="products-item-card__product-name" href="#">
@@ -277,7 +310,12 @@
               <div class="products-item__wrapper">
                 <div class="products-item-card">
                   <a href="#">
-                    <img class="products-item-card__image" src="" alt="Cat Energy PRO 1000 г">
+                    <picture>
+                      <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-6@1x.png 1x, images/catalog-6@2x.png 2x">
+                      <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-6@1x.png 1x, images/catalog-6@2x.png 2x">
+                      <img class="products-item-card__image" src="images/catalog-6@1x.png" srcset="images/catalog-6@2x.png 2x" 
+                      width="68" height="86" alt="Cat Energy PRO 1000 г">
+                    </picture> 
                   </a>                  
                   <div class="products-item-card__text">
                     <a class="products-item-card__product-name" href="#">
@@ -322,7 +360,12 @@
               <div class="products-item__wrapper">
                 <div class="products-item-card">
                   <a href="#">
-                    <img class="products-item-card__image" src="" alt="Cat Energy PRO 500 г">
+                    <picture>
+                      <source type="image/png" media="(min-width: 1440px)" srcset="images/catalog-7@1x.png 1x, images/catalog-7@2x.png 2x">
+                      <source type="image/png" media="(min-width: 768px)" srcset="images/catalog-7@1x.png 1x, images/catalog-7@2x.png 2x">
+                      <img class="products-item-card__image" src="images/catalog-7@1x.png" srcset="images/catalog-1@2x.png 2x" 
+                      width="68" height="86" alt="Cat Energy PRO 500 г">
+                    </picture> 
                   </a>                  
                   <div class="products-item-card__text">
                     <a class="products-item-card__product-name" href="#">
@@ -455,7 +498,7 @@
             </li>
           </ul>
           <div class="other-products-gift">
-            <img class="other-products-gift__image" src="" alt="изображение подарка">
+            <img class="other-products-gift__image" src="images/icon_gift.svg"  width="80" height="83" alt="изображение подарка">
             <p class="other-products-gift__text">
               Закажите все и получите чехол для кота в подарок!
             </p>
@@ -500,33 +543,33 @@
       </section>
       <section class="contacts">
         <a class="contacts__logo-text" href="#">
-          <img src="" alt="CAT-ENERGY-TEXT-LOGO-ICON">         
+          <img src="images/logo.svg" width="128" height="24" alt="CAT-ENERGY-TEXT-LOGO-ICON">         
         </a>
         <div class="contacts__social">
           <ul class="contacts__social-list">
             <li class="contacts__social-item">
               <a class="contacts__social-vk" href="#">
-                <img src="" alt="VK-LOGO-ICON">                
+                <img src="images/vkontakte.svg" width="28" height="22" alt="VK-LOGO-ICON">                
               </a>
             </li>
             <li class="contacts__socail-item">
               <a class="contacts__social-yt" href="#">
-                <img src="" alt="YOUTUBE-LOGO-ICON">               
+                <img src="images/youtube.svg" width="28" height="22" alt="YOUTUBE-LOGO-ICON">               
               </a>
             </li>
             <li class="contacts__socail-item">
               <a class="contacts__social-tg" href="#">
-                <img src="" alt="TG_LOGO-ICON">               
+                <img src="images/telegram.svg" width="28" height="22" alt="TG_LOGO-ICON">               
               </a>
             </li>
           </ul>
         </div>
         <div class="contacts__partner">
           <a class="contacts__partner-logo-text" href="#">
-            <img src="" alt="ACADEMY-LOGO-T-ICON">           
+            <img src="images/HTMLAcademy.svg" width="113" height="20" alt="ACADEMY-LOGO-T-ICON">           
           </a>
           <a class="contacts__partner-logo-image" href="#">
-            <img src="" alt="ACADEMY-LOGO-I-ICON">           
+            <img src="images/logo_html1.svg" width="27" height="34" alt="ACADEMY-LOGO-I-ICON">           
           </a>
         </div>
       </section>
