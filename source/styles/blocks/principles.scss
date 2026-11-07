@@ -1,0 +1,26 @@
+.principles__header {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-transform: none;
+    text-align: center;
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.principles-item {
+    background-color: white;
+}
+
+.principles-item__paragraph {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-transform: none;
+    color: $secondary-color;
+    text-decoration: none;
+}

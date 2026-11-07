@@ -1,0 +1,108 @@
+.other-products__header {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-transform: none;
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.other-products-item__header {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.other-products-item__wrapper {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-transform: none;
+    text-align: center;
+    vertical-align: middle;
+    color: $secondary-color;
+    text-decoration: none;
+
+    background-color: white;
+}
+
+.other-products-item__order-button {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+
+    background-color: $accent-color;
+}
+
+.other-products-gift__text {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-transform: none;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+}
+
+.other-products-gift {
+    width: 280px;
+    height: 290px;
+    background-image: 
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+        url(/images/image1@1x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx){
+        background-image: 
+            linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+            url(/images/image1@2x.png);
+    }
+
+    @media (min-width: 768px) {
+        width: 707px;
+        height: 200px;
+        background-image: 
+            linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+            url(/images/image2@1x.png);
+
+        @media (min-resolution: 2dppx){
+            background-image: 
+               linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+                url(/images/image2@2x.png); 
+        }
+    }
+
+    @media (min-width: 1440px) {
+        width: 245px;
+        height: 288px;
+        background-image: 
+            linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+            url(/images/image1@1x.png);
+
+        @media (min-resolution: 2dppx){
+            background-image: 
+               linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), 
+                url(/images/image1@2x.png); 
+        }
+    }
+}
