@@ -1,26 +1,26 @@
 .products__header {
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 30px;
-    letter-spacing: 0%;
-    color: $primary-color;
-    text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: $primary-color;
+  text-decoration: none;
 }
 
 .products-item-card__product-name {
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-    color: $primary-color;
-    text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: $primary-color;
+  text-decoration: none;
 }
 
 .products__table {
-  td{
+  td {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -35,13 +35,13 @@
   }
 }
 
-.products-item-card{
+.products-item-card {
   text-decoration: none;
 }
 
-.products-item-card__text{
+.products-item-card__text {
   h3 {
-        font-family: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -50,6 +50,7 @@
     color: $primary-color;
     text-decoration: none;
   }
+
   p {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -66,22 +67,22 @@
 }
 
 .products-item__order-button {
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-    text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  text-decoration: none;
 
-    background-color: $accent-color;
+  background-color: $accent-color;
 }
 
 .products-item-card__image {
-    @media (min-width: 1440px), (min-width: 768px){
+  @media (min-width: 1440px), (min-width: 768px) {
     width: 161px;
     height: 172px;
   }
