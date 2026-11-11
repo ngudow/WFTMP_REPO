@@ -1,0 +1,71 @@
+.hero__tagline-main {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-transform: none;
+  color: white;
+  text-decoration: none;
+}
+
+.hero__tagline-side {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.hero__button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  text-decoration: none;
+
+  background-color: $accent-color;
+}
+
+.hero__background-image {
+  width: 320px;
+  height: 302px;
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("/images/index-background-desktop2@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("/images/index-background-desktop2@2x.png");
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1440px) {
+    display: inline;
+    width: 720px;
+    height: 694px;
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("/images/index-background-desktop1@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("/images/index-background-desktop1@2x.png");
+    }
+  }
+}

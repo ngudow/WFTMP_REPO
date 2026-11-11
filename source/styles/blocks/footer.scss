@@ -1,0 +1,112 @@
+.address__text-information {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.address__text-location {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-transform: none;
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+.contacts__logo-text {
+  mask-image: url("../../icons/stack.svg#logo");
+  display: inline-block;
+  width: 128px;
+  height: 24px;
+  background-color: #111111;
+}
+
+.contacts__logo-text:hover {
+  background-color: #3E3E3E;
+}
+
+.contacts__logo-text:active {
+  background-color: #6B6B6B;
+}
+
+.contacts__social-vk {
+  mask-image: url("../../icons/stack.svg#vkontakte");
+  display: inline-block;
+  width: 28px;
+  height: 22px;
+  background-color: #666666;
+}
+
+.contacts__social-yt {
+  mask-image: url("../../icons/stack.svg#youtube");
+  display: inline-block;
+  width: 28px;
+  height: 22px;
+  background-color: #666666;
+}
+
+.contacts__social-tg {
+  mask-image: url("../../icons/stack.svg#telegram");
+  display: inline-block;
+  width: 28px;
+  height: 22px;
+  background-color: #666666;
+}
+
+.contacts__social-vk:hover,
+.contacts__social-yt:hover, 
+.contacts__social-tg:hover {
+  background-color: #68B738;
+}
+
+.contacts__social-vk:active,
+.contacts__social-yt:active, 
+.contacts__social-tg:active {
+  background-color: #68B738;
+  opacity: 0.8;
+}
+
+.contacts__partner-logo-text {
+  mask-image: url("../../icons/stack.svg#HTMLAcademy");
+  display: inline-block;
+  width: 113px;
+  height: 20px;
+  background-color: #666666;
+}
+
+.contacts__partner-logo-text:hover {
+  background-color: #444444;
+}
+
+.contacts__partner-logo-text:active {
+  background-color: #444444;
+  opacity: 0.8;
+}
+
+.contacts__partner-logo-image {
+  mask-image: url("../../icons/stack.svg#logo_html1");
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+}
+
+.contacts__partner-logo-image:hover {
+  background-color: #68B738;
+}
+
+.contacts__partner-logo-image:active {
+  background-color: #68B738;
+  opacity: 0.8;
+}
+
+
+
+
