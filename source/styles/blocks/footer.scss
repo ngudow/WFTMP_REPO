@@ -1,3 +1,86 @@
+.footer {
+  padding: 0;
+  margin: 0;
+  background-color: $footer-color;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.address {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.address__wrapper {
+  width: 320px;
+  height: 112px;
+  padding: 0;
+  margin: 0;
+
+  background-color: $background-color;
+  
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 565;
+  }
+}
+
+.address__map {
+  width: 100%;
+  height: 365px;
+  
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.contacts {
+  width: 320px;
+  height: 240px;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  align-items: center; 
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    height: 147px;
+
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    height: 169px;
+  }
+}
+
+.contacts__social-list {
+  width: 132px;
+  height: 22px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content:space-between;
+}
+
 .address__text-information {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -7,6 +90,11 @@
   text-transform: uppercase;
   color: $primary-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__text-location {
@@ -18,6 +106,10 @@
   text-transform: none;
   color: $secondary-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .contacts__logo-text {

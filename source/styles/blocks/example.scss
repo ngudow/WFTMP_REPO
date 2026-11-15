@@ -1,5 +1,27 @@
+.example {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
 .example__wrapper {
-  background-color: #eaeaea;
+  padding: 10px;
+  margin: 10px;
+  width: 320px;
+  height: 659px;
+
+  background-color: #D9D9D9;
+  
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {     
+    width: $desktop-width;
+    height: 598px;
+  }
 }
 
 .example__header {
@@ -13,6 +35,11 @@
   vertical-align: middle;
   color: black;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example-text__paragraph {
@@ -24,6 +51,11 @@
   text-transform: none;
   color: $secondary-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example-text-expenditures-item__value {
@@ -35,6 +67,11 @@
   text-transform: uppercase;
   color: $primary-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example-text-expenditures-item__description {
@@ -48,6 +85,11 @@
   vertical-align: middle;
   color: $secondary-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example-expenses__description {
@@ -60,6 +102,11 @@
   text-align: center;
   color: $primary-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .example-expenses__value {
@@ -72,4 +119,9 @@
   text-align: center;
   color: $primary-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
