@@ -34,12 +34,12 @@
         </div>
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item navigation-item--active">
+            <li class="navigation-item">
               <a class="navigation-item__text" href="#">
                 Главная
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item navigation-item--active">
               <a class="navigation-item__text" href="catalog.html">
                 Каталог продукции
               </a>
@@ -411,16 +411,16 @@
             <li class="products-item">
               <div class="products-item__wrapper">
                 <a class="products-item-card" href="#">
-                  <div class="products-item-card__text">
-                      <h3>
+                  <div class="products-item-card__text more-products__text">
+                      <h3 class="more-products__header">
                         Показать еще 100500 товаров
                       </h3>
-                      <p>
+                      <p class="more-products__slogan">
                         На самом деле вкусов гораздо больше!
                       </p>
                   </div>                    
                 </a>           
-                <button class="products-item__order-button products-item__show-all-button" type="button">
+                <button class="products-item__order-button more-products__button" type="button">
                   показать все
                 </button>
               </div>
@@ -507,12 +507,11 @@
           </div>
         </div>
       </section> 
-
       <section class="mailing">
+        <h2 class="mailing__header">
+          Акции и новинки
+        </h2>
         <div class="mailing__wrapper">
-          <h2 class="mailing__header">
-            Акции и новинки
-          </h2>
           <h3 class="mailing__slogan">
             Подпишитесь на наши новости и не пропустите ни одного предложения!
           </h3>
@@ -527,51 +526,43 @@
     </main>
     <footer class="footer">
       <section class="address">
+        <h2 class="visually-hidden">
+          Мы находимся по адресу
+        </h2>
         <div class="address__wrapper">
-          <h2 class="visually-hidden">
-            Мы находимся по адресу
-          </h2>
-          <div class="address__text">
-            <div class="address__text-information">
-              приглашаем к сотрудничеству дилеров!
-            </div>
-            <div class="address__text-location">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </div>            
+          <div class="address__text-information">
+            приглашаем к сотрудничеству дилеров!
           </div>
+          <div class="address__text-location">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </div>            
         </div>  
         <iframe class="address__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2f457cce80848977f81ce65d094efa2c9c2c7a92b016a7b8d9b026577a159764&amp;
         source=constructor"></iframe>
       </section>
       <section class="contacts">
         <a class="contacts__logo-text" href="#">
-          <!-- <img src="images/logo.svg" width="128" height="24" alt="Cat Energy">          -->
         </a>
         <div class="contacts__social">
           <ul class="contacts__social-list">
             <li class="contacts__social-item">
               <a class="contacts__social-vk" href="#">
-                <!-- <img src="images/vkontakte.svg" width="28" height="22" alt="VKontakte">                 -->
               </a>
             </li>
             <li class="contacts__socail-item">
               <a class="contacts__social-yt" href="#">
-                <!-- <img src="images/youtube.svg" width="28" height="22" alt="YouTube">                -->
               </a>
             </li>
             <li class="contacts__socail-item">
               <a class="contacts__social-tg" href="#">
-                <!-- <img src="images/telegram.svg" width="28" height="22" alt="Telegram">                -->
               </a>
             </li>
           </ul>
         </div>
         <div class="contacts__partner">
           <a class="contacts__partner-logo-text" href="#">
-            <!-- <img src="images/HTMLAcademy.svg" width="113" height="20" alt="HTML Academy">            -->
           </a>
           <a class="contacts__partner-logo-image" href="#">
-            <!-- <img src="images/logo_html1.svg" width="27" height="34" alt="HTML Academy">            -->
           </a>
         </div>
       </section>

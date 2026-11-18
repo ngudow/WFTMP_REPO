@@ -52,6 +52,7 @@
   outline: 5px solid green;
   outline-offset: -5px;
 
+  position: relative;
   width: 280px;
   height: 60px;
   margin: 5px 0 5px;
@@ -61,14 +62,11 @@
   @media (min-width: $tablet-width) {
     width: 230px;
     height: 280px;
-      margin: 10px 48px 10px;
+    margin: 10px 48px 10px;
   }
 }
 
 .principles-item__paragraph {
-  width: 200px;
-  height: 54px;
-
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -78,8 +76,18 @@
   color: $secondary-color;
   text-decoration: none;
 
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 200px;
+  height: 54px;
+  margin-top: 0;
+
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    top: 115px;
+    left: 0;
   }
 }

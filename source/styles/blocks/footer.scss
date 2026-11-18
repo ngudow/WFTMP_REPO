@@ -13,12 +13,18 @@
   width: 100%;
 
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  background-color: $background-color;
 }
 
 .address__wrapper {
+  outline: 5px solid rgb(29, 8, 214);
+  outline-offset: -5px;
+
+  position: relative;
   width: 320px;
   height: 112px;
   padding: 0;
@@ -32,7 +38,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    transform: translate(-48%);
     width: 565;
+    z-index: 100;
   }
 }
 
@@ -82,6 +92,9 @@
 }
 
 .address__text-information {
+  outline: 5px solid rgb(8, 214, 87);
+  outline-offset: -5px;
+
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -90,14 +103,27 @@
   text-transform: uppercase;
   color: $primary-color;
   text-decoration: none;
+  text-align: left;
+
+  position: absolute;
+  top: 26px;
+  left: 20px;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+
+    top: 61px;
+    left: 70px;
+    width: 163px;
   }
 }
 
 .address__text-location {
+  outline: 5px solid rgb(8, 214, 87);
+  outline-offset: -5px;
+
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -106,9 +132,22 @@
   text-transform: none;
   color: $secondary-color;
   text-decoration: none;
+  text-align: left;
+
+  position: absolute;
+  top: 26px;
+  left: 160px;
+  width: 140px;
+  margin-top: 0;
 
   @media (min-width: $tablet-width) {
+    text-align: right;
     font-size: 16px;
+
+    top: 61px;
+    left: auto;
+    right: 70px;
+    width: 157px;
   }
 }
 

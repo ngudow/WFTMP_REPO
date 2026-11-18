@@ -25,6 +25,7 @@
   outline: 5px solid green;
   outline-offset: -5px;
 
+  position: relative;
   padding: 10px;
   margin: 10px;
   width: 280px;
@@ -57,9 +58,22 @@
   color: black;
   text-decoration: none;
 
+  position: absolute;
+  top: 35px;
+  left: 90px;
+  margin-top: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+      
+    top: 80px;
+    left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 80px;
+    left: 210px;
   }
 }
 
@@ -73,9 +87,24 @@
   color: #444444;
   text-decoration: none;
 
+  position: absolute;
+  top: 90px;
+  left: 13px;
+  width: 227px;
+  margin-top: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+
+    top: 160px;
+    left: 50px;
+    width: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 190px;
+    width: 450px;
   }
 }
 
@@ -91,8 +120,35 @@
   color: black;
   text-decoration: none;
 
+  position: absolute;
+  top: 200px;
+  left: 13px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 100%;
+
+    top: 310px;
+    left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 290px;
+  }
+}
+
+.advantages-item__image {
+  position: absolute;
+  top: 24px;
+  left: 13px;
+
+  @media (min-width: $tablet-width) {
+    top: 80px;
+    left: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 40px;
+    left: 50px;
   }
 }
