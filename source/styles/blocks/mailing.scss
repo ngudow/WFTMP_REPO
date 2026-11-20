@@ -1,3 +1,33 @@
+.mailing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.mailing__wrapper {
+  outline: 5px solid rgb(29, 139, 112);
+  outline-offset: -5px;
+
+  width: 320px;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  background-color: $background-color;
+  
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    height: 144px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 112px;
+  }
+}
+
 .mailing__header {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -7,6 +37,11 @@
   text-transform: none;
   color: $primary-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .mailing__slogan {
@@ -19,6 +54,25 @@
   text-align: center;
   color: $primary-color;
   text-decoration: none;
+
+  position: absolute;
+  top: 0;
+  left: 21px;
+  width: 280px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+
+    left: 68px;
+    width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 40px;
+    width: 1360px;
+  }
 }
 
 .mailing-form__input {
@@ -30,6 +84,25 @@
   text-transform: uppercase;
   color: $secondary-color;
   text-decoration: none;
+
+  position: absolute;
+  top: 64px;
+  left: 21px;
+  width: 275px;
+  height: 56px;
+
+  @media (min-width: $tablet-width) {
+    top: 88px;
+    left: 68px;
+    width: 369px;
+    height: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 56px;
+    left: 344px;
+    width: 490px;
+  }
 }
 
 .mailing-form__button {
@@ -44,5 +117,22 @@
   color: white;
   text-decoration: none;
 
+  position: absolute;
+  top: 136px;
+  left: 21px;
+  width: 280px;
+  height: 56px;
+
   background-color: $accent-color;
+
+  @media (min-width: $tablet-width) {
+    top: 88px;
+    left: 444px;
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 56px;
+    left: 840px;
+  }
 }

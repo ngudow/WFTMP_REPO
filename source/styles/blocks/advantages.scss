@@ -1,5 +1,49 @@
-.advantages-item__wrapper {
-  background-color: #f2f2f2;
+.advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.advantages-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.advantages-item {
+  outline: 5px solid green;
+  outline-offset: -5px;
+
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+  width: 280px;
+  height: 266px;
+
+  background-color: #D9D9D9;
+  
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 372px;
+  }
+
+  @media (min-width: $desktop-width) {   
+    margin: 10px 15px 10px;  
+    width: 570px;
+    height: 374px;
+  }
+
 }
 
 .advantages-item__header {
@@ -13,6 +57,24 @@
   vertical-align: middle;
   color: black;
   text-decoration: none;
+
+  position: absolute;
+  top: 35px;
+  left: 90px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+      
+    top: 80px;
+    left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 80px;
+    left: 210px;
+  }
 }
 
 .advantages-item__paragraph {
@@ -22,10 +84,28 @@
   line-height: 18px;
   letter-spacing: 0%;
   text-transform: none;
-  // text-align: center;
-  // vertical-align: middle;
   color: #444444;
   text-decoration: none;
+
+  position: absolute;
+  top: 90px;
+  left: 13px;
+  width: 227px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+
+    top: 160px;
+    left: 50px;
+    width: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 190px;
+    width: 450px;
+  }
 }
 
 .advantages-item__button {
@@ -39,4 +119,36 @@
   vertical-align: middle;
   color: black;
   text-decoration: none;
+
+  position: absolute;
+  top: 200px;
+  left: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 100%;
+
+    top: 310px;
+    left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 290px;
+  }
+}
+
+.advantages-item__image {
+  position: absolute;
+  top: 24px;
+  left: 13px;
+
+  @media (min-width: $tablet-width) {
+    top: 80px;
+    left: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 40px;
+    left: 50px;
+  }
 }

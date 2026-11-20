@@ -1,3 +1,10 @@
+.principles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
 .principles__header {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -8,10 +15,55 @@
   text-align: center;
   color: $primary-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.principles-list {
+  outline: 5px solid rgb(138, 32, 124);
+  outline-offset: -5px;
+
+  padding: 0;
+  margin: 0;
+  width: 280px;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .principles-item {
+  outline: 5px solid green;
+  outline-offset: -5px;
+
+  position: relative;
+  width: 280px;
+  height: 60px;
+  margin: 5px 0 5px;
+
   background-color: white;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    height: 280px;
+    margin: 10px 48px 10px;
+  }
 }
 
 .principles-item__paragraph {
@@ -23,4 +75,19 @@
   text-transform: none;
   color: $secondary-color;
   text-decoration: none;
+
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 200px;
+  height: 54px;
+  margin-top: 0;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    top: 115px;
+    left: 0;
+  }
 }

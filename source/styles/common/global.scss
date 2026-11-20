@@ -1,5 +1,7 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 
 body {
-  background-color: #663399;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
 }
