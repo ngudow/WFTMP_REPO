@@ -6,8 +6,8 @@
 }
 
 .products-list {
-  outline: 5px solid rgb(138, 32, 124);
-  outline-offset: -5px;
+  // outline: 5px solid rgb(138, 32, 124);
+  // outline-offset: -5px;
 
   padding: 0;
   margin: 0;
@@ -32,20 +32,25 @@
 }
 
 .products-item {
-  outline: 5px solid green;
-  outline-offset: -5px;
+  // outline: 5px solid green;
+  // outline-offset: -5px;
 
   position: relative;
   width: 320px;
   height: 209px;
   margin: 0;
 
-  background-color: white;
+  background-color: $background-color;
 
   @media (min-width: $tablet-width) {
     width: 324px;
     height: 511px;
     margin: 30px;
+    background: linear-gradient(
+      to bottom,
+      transparent 15%,
+      $footer-color 15%
+    );
   }
 
   @media (min-width: $desktop-width) {
@@ -85,19 +90,15 @@
   }
 }
 
-.products__table {
-  td {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0%;
-    text-transform: none;
-    text-align: center;
-    color: $secondary-color;
-    text-decoration: none;
+.products__table-row {
+  border-bottom: 1px solid $secondary-color;
 
-    background-color: white;
+  .products__table-cell:first-child {
+    text-align: left;
+  }
+
+  .products__table-cell:last-child {
+    text-align: right;
   }
 }
 
@@ -106,8 +107,8 @@
 }
 
 .products-item-card__text {
-  outline: 5px solid rgb(63, 8, 214);
-  outline-offset: -5px;
+  // outline: 5px solid rgb(63, 8, 214);
+  // outline-offset: -5px;
 
   position: absolute;
   top: 30px;
@@ -130,7 +131,7 @@
   }
 
 
-  h3 {
+  .products-item-card__header {
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -161,7 +162,8 @@
     }
   }
 
-  p, td {
+  .more-products__slogan, 
+  .products__table-cell {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -171,8 +173,6 @@
     text-align: center;
     color: $secondary-color;
     text-decoration: none;
-
-    background-color: white;
 
     @media (min-width: $tablet-width) {
       font-size: 16px;
@@ -244,6 +244,7 @@
   position: absolute;
   top: 40px;
   width: 140px;
+  border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
     top: 70px;
@@ -265,7 +266,7 @@
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  color: white;
+  color: $background-color;
   text-decoration: none;
 
   position: absolute;
@@ -273,6 +274,7 @@
   left: 20px;
   width: 280px;
   height: 40px;
+  border: 0;
 
   background-color: $accent-color;
 
@@ -287,15 +289,35 @@
   }
 }
 
+.products-item__order-button:hover {
+  background-color: $accent-button-click-color;
+}
+
+.products-item__order-button:active {
+  color:rgba(255,255,255,0.4);
+  background-color: $accent-button-click-color;
+}
+
 .more-products__button{
   color: $primary-color;
   background-color: $footer-color;
 }
 
+.more-products__button:hover {
+  color: $primary-color;
+  background-color: $footer-color;
+}
+
+.more-products__button:active {
+  color:rgba(0,0,0,0.4);
+  background-color: $footer-color;
+}
+
+
 .products-item-card__image {
   position: absolute;
   top: 35px;
-  left: 90px;
+  left: 80px;
   transform: translateX(-50%);
 
 
@@ -303,6 +325,22 @@
     width: 161px;
     height: 172px;
     top: 40px;
+    left: 162px;
+  }
+
+  @media  (min-width: $desktop-width) {
+    left: 122px;
+  }
+}
+
+.more-products__image {
+  position: absolute;
+  top: 35px;
+  left: 160px;
+  transform: translate(-50%, 0);
+
+  @media  (min-width: $tablet-width) {
+    top: 90px;
     left: 162px;
   }
 

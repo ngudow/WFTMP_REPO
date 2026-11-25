@@ -6,11 +6,11 @@
 }
 
 .mailing__wrapper {
-  outline: 5px solid rgb(29, 139, 112);
-  outline-offset: -5px;
+  // outline: 5px solid rgb(29, 139, 112);
+  // outline-offset: -5px;
 
   width: 320px;
-  height: 200px;
+  height: 232px;
   padding: 0;
   margin: 0;
   position: relative;
@@ -19,12 +19,31 @@
   
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    height: 144px;
+    height: 224px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    height: 112px;
+    height: 200px;
+  }
+}
+
+.mailing__header-wrapper {
+  width: 320px;
+  background-image: linear-gradient(
+    to bottom,
+    transparent calc(50% - 3px),
+    $accent-color calc(50% - 2px),
+    $accent-color calc(50% + 2px),
+    transparent calc(50% + 2px)
+  );
+  
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
 
@@ -38,9 +57,21 @@
   color: $primary-color;
   text-decoration: none;
 
+  position: relative;
+  left: 0px;
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $background-color;
+
   @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
+    left: 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 110px;
   }
 }
 
@@ -103,6 +134,10 @@
     left: 344px;
     width: 490px;
   }
+
+  &:user-invalid {
+    border-color: red;
+  }
 }
 
 .mailing-form__button {
@@ -114,7 +149,7 @@
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  color: white;
+  color: $background-color;
   text-decoration: none;
 
   position: absolute;
@@ -122,6 +157,7 @@
   left: 21px;
   width: 280px;
   height: 56px;
+  border: 0;
 
   background-color: $accent-color;
 
@@ -135,4 +171,13 @@
     top: 56px;
     left: 840px;
   }
+}
+
+.mailing-form__button:hover {
+  background-color: $accent-button-click-color;
+}
+
+.mailing-form__button:active {
+  color:rgba(255,255,255,0.4);
+  background-color: $accent-button-click-color;
 }

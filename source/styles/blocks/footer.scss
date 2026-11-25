@@ -21,8 +21,8 @@
 }
 
 .address__wrapper {
-  outline: 5px solid rgb(29, 8, 214);
-  outline-offset: -5px;
+  // outline: 5px solid rgb(29, 8, 214);
+  // outline-offset: -5px;
 
   position: relative;
   width: 320px;
@@ -92,8 +92,8 @@
 }
 
 .address__text-information {
-  outline: 5px solid rgb(8, 214, 87);
-  outline-offset: -5px;
+  // outline: 5px solid rgb(8, 214, 87);
+  // outline-offset: -5px;
 
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -121,8 +121,8 @@
 }
 
 .address__text-location {
-  outline: 5px solid rgb(8, 214, 87);
-  outline-offset: -5px;
+  // outline: 5px solid rgb(8, 214, 87);
+  // outline-offset: -5px;
 
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -156,15 +156,15 @@
   display: inline-block;
   width: 128px;
   height: 24px;
-  background-color: #111111;
+  background-color: $primary-color;
 }
 
 .contacts__logo-text:hover {
-  background-color: #3E3E3E;
+  background-color: $contacts-logo-hover-color;
 }
 
 .contacts__logo-text:active {
-  background-color: #6B6B6B;
+  background-color: $contacts-logo-active-color;
 }
 
 .contacts__social-vk {
@@ -172,7 +172,7 @@
   display: inline-block;
   width: 28px;
   height: 22px;
-  background-color: #666666;
+  background-color: $contacts-logo-color;
 }
 
 .contacts__social-yt {
@@ -180,7 +180,7 @@
   display: inline-block;
   width: 28px;
   height: 22px;
-  background-color: #666666;
+  background-color: $contacts-logo-color;
 }
 
 .contacts__social-tg {
@@ -188,19 +188,19 @@
   display: inline-block;
   width: 28px;
   height: 22px;
-  background-color: #666666;
+  background-color: $contacts-logo-color;
 }
 
 .contacts__social-vk:hover,
 .contacts__social-yt:hover, 
 .contacts__social-tg:hover {
-  background-color: #68B738;
+  background-color: $accent-color;
 }
 
 .contacts__social-vk:active,
 .contacts__social-yt:active, 
 .contacts__social-tg:active {
-  background-color: #68B738;
+  background-color: $accent-color;
   opacity: 0.8;
 }
 
@@ -209,15 +209,15 @@
   display: inline-block;
   width: 113px;
   height: 20px;
-  background-color: #666666;
+  background-color: $contacts-logo-color;
 }
 
 .contacts__partner-logo-text:hover {
-  background-color: #444444;
+  background-color: $secondary-color;
 }
 
 .contacts__partner-logo-text:active {
-  background-color: #444444;
+  background-color: $secondary-color;
   opacity: 0.8;
 }
 
@@ -226,15 +226,15 @@
   display: inline-block;
   width: 27px;
   height: 34px;
-  background-color: #666666;
+  background-color: $contacts-logo-color;
 }
 
 .contacts__partner-logo-image:hover {
-  background-color: #68B738;
+  background-color: $accent-color;
 }
 
 .contacts__partner-logo-image:active {
-  background-color: #68B738;
+  background-color: $accent-color;
   opacity: 0.8;
 }
 

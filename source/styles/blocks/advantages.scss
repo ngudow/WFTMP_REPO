@@ -22,8 +22,8 @@
 }
 
 .advantages-item {
-  outline: 5px solid green;
-  outline-offset: -5px;
+  // outline: 5px solid green;
+  // outline-offset: -5px;
 
   position: relative;
   padding: 10px;
@@ -31,7 +31,7 @@
   width: 280px;
   height: 266px;
 
-  background-color: #D9D9D9;
+  background-color: $footer-color;
   
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {   
-    margin: 10px 15px 10px;  
+    margin: 10px 40px 10px;  
     width: 570px;
     height: 374px;
   }
@@ -55,7 +55,7 @@
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  color: black;
+  color: $primary-color;
   text-decoration: none;
 
   position: absolute;
@@ -84,7 +84,7 @@
   line-height: 18px;
   letter-spacing: 0%;
   text-transform: none;
-  color: #444444;
+  color: $secondary-color;
   text-decoration: none;
 
   position: absolute;
@@ -117,7 +117,7 @@
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  color: black;
+  color: $primary-color;
   text-decoration: none;
 
   position: absolute;
@@ -135,6 +135,14 @@
   @media (min-width: $desktop-width) {
     top: 290px;
   }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 40%;
+  }
 }
 
 .advantages-item__image {
@@ -144,7 +152,8 @@
 
   @media (min-width: $tablet-width) {
     top: 80px;
-    left: 440px;
+    left: 550px;
+    transform: translateX(-50%);
   }
 
   @media (min-width: $desktop-width) {
