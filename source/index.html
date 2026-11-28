@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- <script src="scripts/index.js" defer></script> -->
+    <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="header">
@@ -27,27 +27,24 @@
               <img src="images/logo.svg" width="101" height="18" alt="Cat Energy">
             </picture> 
           </a>
-          <button class="navigation-toggle" type="button">
-            <span>
-              X
-            </span>
+          <button class="navigation-toggle navigation-toggle--closed" type="button">
           </button>
         </div>
         <nav class="navigation navigation--not-active"> 
           <!-- .navigation--not-active  -->
           <ul class="navigation-list">
-            <li class="navigation-item navigation-item--active">
-              <a class="navigation-item__text" href="#">
+            <li class="navigation-item navigation-item--active navigation-item--active-start-page">
+              <a class="navigation-item__text navigation-item__text--start-page" href="#">
                 Главная
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-item__text" href="catalog.html">
+              <a class="navigation-item__text navigation-item__text--start-page" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-item__text" href="#">
+              <a class="navigation-item__text navigation-item__text--start-page" href="#">
                 Подбор программы
               </a>
             </li>
@@ -67,13 +64,13 @@
           <h3 class="hero__tagline-side">
             Занялся собой? Займись котом!
           </h3>
-          <button class="hero__button" type="button">
+          <button class="hero__button" >
             Подобрать программу
           </button>
           <picture>
-            <source type="image/png" media="(min-width: 1440px)" srcset="images/index-can-mobile1@1x.png 1x, images/index-can-mobile1@2x.png 2x" width="609" height="552">
-            <source type="image/png" media="(min-width: 768px)" srcset="images/index-can-mobile1@1x.png 1x, images/index-can-mobile1@2x.png 2x" width="709" height="609">
-            <img class="hero__image" src="images/index-can-mobile1@1x.png" srcset="images/index-can-mobile1@2x.png 2x" 
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/index-can-mobile1@2x.png 1x, images/index-can-mobile1@2x.png 2x" width="609" height="552">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/index-can-mobile1@2x.png 1x, images/index-can-mobile1@2x.png 2x" width="709" height="609">
+            <img class="hero__image" src="images/index-can-mobile1@2x.png" srcset="images/index-can-mobile1@2x.png 2x" 
             width="280" height="270" alt="Cat Energy chicken">
           </picture>
           <div class="hero__background-image"></div>
@@ -100,7 +97,7 @@
                   Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
                 </p>
                 <a class="advantages-item__button" href="#">
-                  каталог slim
+                  каталог slim ➞
                 </a>
               </div>
             </li>
@@ -118,7 +115,7 @@
                   Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
                 </p>
                 <a class="advantages-item__button" href="#">
-                  каталог pro
+                  каталог pro ➞
                 </a>
             </li>
           </ul>
@@ -136,6 +133,9 @@
                   <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/Group_1.svg" width="80" height="80">
                   <img class="principles-item__image" src="images/Group_1.svg" width="60" height="60" alt="лист">
                 </picture>
+                <picture>
+                  <img class="principles-item__number" src="images/1.svg" height="280" alt="1">
+                </picture> 
                 <p class="principles-item__paragraph">
                   Функциональное питание содержит только полезные питательные вещества.
                 </p>
@@ -147,6 +147,9 @@
                   <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/Group_2.svg" width="80" height="80">
                   <img class="principles-item__image" src="images/Group_2.svg" width="60" height="60" alt="порошок">
                 </picture>
+                <picture>
+                  <img class="principles-item__number" src="images/2.svg" height="280" alt="2">
+                </picture> 
                 <p class="principles-item__paragraph">
                   Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
                 </p>
@@ -158,6 +161,9 @@
                   <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/Group_3.svg" width="80" height="80">
                   <img class="principles-item__image" src="images/Group_3.svg" width="60" height="60" alt="столовые приборы">
                 </picture>
+                <picture>
+                  <img class="principles-item__number" src="images/3.svg" height="280" alt="3">
+                </picture> 
                 <p class="principles-item__paragraph">
                   Замените один-два приема обычной еды на наше функциональное питание.
                 </p>
@@ -169,6 +175,9 @@
                   <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/Group_4.svg" width="80" height="80">
                   <img class="principles-item__image" src="images/Group_4.svg" width="60" height="60" alt="весы">
                 </picture>
+                <picture>
+                  <img class="principles-item__number" src="images/4.svg" height="280" alt="4">
+                </picture> 
                 <p class="principles-item__paragraph">
                   Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
                 </p>
@@ -182,7 +191,6 @@
           <h2 class="example__header">
             Живой пример
           </h2>
-          <!-- <div class="example-text"> -->
           <p class="example-text__paragraph">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. 
             Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. 
@@ -218,17 +226,21 @@
             <h3 class="example-expenses__value">
               15 000 РУБ.
             </h3>
-            <!-- </div> -->
           </div>
           <div class="example-interactive">
-            <picture>
-              <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x" width="560" height="512">
-              <img src="images/cat-before@1x.png"  srcset="images/cat-before@2x.png" width="280" height="256" alt="cat before">
-            </picture>
-            <picture>
-              <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after@1x.png 1x, images/cat-after@2x.png 2x" width="560" height="512">
-              <img src="images/cat-after@1x.png"  srcset="images/cat-after@2x.png" width="280" height="256" alt="cat after">
-            </picture>
+            <div class="example-interactive__before">
+              <picture class="example-interactive__picture">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x" width="560" height="512">
+                <img class="example-interactive__image" src="images/cat-before@1x.png" srcset="images/cat-before@2x.png" width="280" height="256" alt="cat before">
+              </picture>
+            </div>
+            <div class="example-interactive__after">
+              <picture class="example-interactive__picture">
+                <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after@1x.png 1x, images/cat-after@2x.png 2x" width="560" height="512">
+                <img class="example-interactive__image" src="images/cat-after@1x.png" srcset="images/cat-after@2x.png" width="280" height="256" alt="cat after">
+              </picture>
+            </div>
+            <div class="example-interactive__handle"></div>
           </div>
         </div>
       </section>

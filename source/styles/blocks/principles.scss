@@ -5,6 +5,23 @@
   align-items: center; 
 }
 
+.principles__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  width: 320px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {     
+    width: $desktop-width;
+  }
+}
+
 .principles__header {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -12,20 +29,25 @@
   line-height: 40px;
   letter-spacing: 0%;
   text-transform: none;
-  text-align: center;
+  text-align: left;
   color: $primary-color;
   text-decoration: none;
+
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {     
+    width: 1250px;
   }
 }
 
 .principles-list {
-  outline: 5px solid rgb(138, 32, 124);
-  outline-offset: -5px;
-
   padding: 0;
   margin: 0;
   width: 280px;
@@ -49,20 +71,22 @@
 }
 
 .principles-item {
-  outline: 5px solid green;
-  outline-offset: -5px;
-
   position: relative;
   width: 280px;
   height: 60px;
   margin: 5px 0 5px;
 
-  background-color: white;
+  background-color: $background-color;
 
   @media (min-width: $tablet-width) {
-    width: 230px;
+    width: 246px;
     height: 280px;
-    margin: 10px 48px 10px;
+    margin: 10px 60px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    margin: 10px 50px 10px;
   }
 }
 
@@ -89,5 +113,23 @@
     line-height: 24px;
     top: 115px;
     left: 0;
+    width: 100%;
+  }
+}
+
+.principles-item__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.principles-item__number {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 0;
   }
 }
